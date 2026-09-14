@@ -3,6 +3,24 @@
     <channel>
         <title>Nameplate</title>
         <item>
+            <title>0.4.0</title>
+            <pubDate>Sun, 13 Sep 2026 23:17:20 -0700</pubDate>
+            <link>https://raw.githubusercontent.com/steipete/Nameplate/main/appcast.xml</link>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h2>Nameplate 0.4.0</h2>
+<p><strong>Highlights:</strong> Move name tags inward from any corner with configurable horizontal and vertical offsets on macOS, Windows, and Linux.</p>
+<ul>
+<li>Name-tag horizontal and vertical offsets can now move the tag inward from its selected corner on macOS, Windows, and Linux. Thanks @Czaruno!</li>
+<li>Maintenance: update Sparkle, Linux dependencies, Windows test tooling, and GitHub Actions checkout.</li>
+</ul>
+<p><a href="https://github.com/steipete/Nameplate/blob/main/CHANGELOG.md">View full changelog</a></p>
+]]></description>
+            <enclosure url="https://github.com/steipete/Nameplate/releases/download/v0.4.0/Nameplate-0.4.0.zip" length="3124529" type="application/octet-stream" sparkle:edSignature="R3B0i6LCKhqsxJgivjp5V/LEV1EM0zUcqSGcUP6m0KMexV8OeetCIkbw4AmkhDN4savkR3bDgl0urSML50eOCw=="/>
+        </item>
+        <item>
             <title>0.3.1</title>
             <pubDate>Thu, 16 Jul 2026 04:04:47 +0100</pubDate>
             <link>https://raw.githubusercontent.com/steipete/Nameplate/main/appcast.xml</link>
