@@ -1,5 +1,7 @@
 # Changelog
 
+## 0.4.1 - Unreleased
+
 ## 0.4.0 - 2026-09-13
 
 **Highlights:** Move name tags inward from any corner with configurable horizontal and vertical offsets on macOS, Windows, and Linux.
