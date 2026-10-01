@@ -11,8 +11,12 @@
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 0,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -22,21 +26,25 @@
       "screenshot" : "topLeft-0-0-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 0,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
       "capturedPixelBounds" : {
         "bottom" : 65,
         "greenPixels" : 10811,
-        "left" : 1457,
-        "right" : 1742,
+        "left" : 1777,
+        "right" : 2062,
         "top" : 20
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 0,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -46,21 +54,25 @@
       "screenshot" : "topCenter-0-0-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 0,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
       "capturedPixelBounds" : {
         "bottom" : 65,
         "greenPixels" : 10815,
-        "left" : 2894,
-        "right" : 3179,
+        "left" : 3534,
+        "right" : 3819,
         "top" : 20
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 0,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -70,21 +82,25 @@
       "screenshot" : "topRight-0-0-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 0,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
       "capturedPixelBounds" : {
-        "bottom" : 922,
+        "bottom" : 1102,
         "greenPixels" : 10814,
         "left" : 20,
         "right" : 305,
-        "top" : 877
+        "top" : 1057
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 0,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -94,21 +110,25 @@
       "screenshot" : "leftCenter-0-0-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 0,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
       "capturedPixelBounds" : {
-        "bottom" : 922,
+        "bottom" : 1102,
         "greenPixels" : 10815,
-        "left" : 2894,
-        "right" : 3179,
-        "top" : 877
+        "left" : 3534,
+        "right" : 3819,
+        "top" : 1057
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 0,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -118,21 +138,25 @@
       "screenshot" : "rightCenter-0-0-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 0,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
       "capturedPixelBounds" : {
-        "bottom" : 1779,
+        "bottom" : 2139,
         "greenPixels" : 10814,
         "left" : 20,
         "right" : 305,
-        "top" : 1734
+        "top" : 2094
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 0,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -142,21 +166,25 @@
       "screenshot" : "bottomLeft-0-0-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 0,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
       "capturedPixelBounds" : {
-        "bottom" : 1779,
+        "bottom" : 2139,
         "greenPixels" : 10809,
-        "left" : 1457,
-        "right" : 1742,
-        "top" : 1734
+        "left" : 1777,
+        "right" : 2062,
+        "top" : 2094
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 0,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -166,21 +194,25 @@
       "screenshot" : "bottomCenter-0-0-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 0,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
       "capturedPixelBounds" : {
-        "bottom" : 1779,
+        "bottom" : 2139,
         "greenPixels" : 10814,
-        "left" : 2894,
-        "right" : 3179,
-        "top" : 1734
+        "left" : 3534,
+        "right" : 3819,
+        "top" : 2094
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 0,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -190,21 +222,25 @@
       "screenshot" : "bottomRight-0-0-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 0,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
       "capturedPixelBounds" : {
-        "bottom" : 722,
+        "bottom" : 902,
         "greenPixels" : 10815,
-        "left" : 2894,
-        "right" : 3179,
-        "top" : 677
+        "left" : 3534,
+        "right" : 3819,
+        "top" : 857
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 0,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -214,21 +250,25 @@
       "screenshot" : "rightCenter-0--100-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : -100,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
       "capturedPixelBounds" : {
-        "bottom" : 1122,
+        "bottom" : 1302,
         "greenPixels" : 10815,
-        "left" : 2894,
-        "right" : 3179,
-        "top" : 1077
+        "left" : 3534,
+        "right" : 3819,
+        "top" : 1257
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 0,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -238,21 +278,25 @@
       "screenshot" : "rightCenter-0-100-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 100,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
       "capturedPixelBounds" : {
         "bottom" : 65,
         "greenPixels" : 10811,
-        "left" : 1257,
-        "right" : 1542,
+        "left" : 1577,
+        "right" : 1862,
         "top" : 20
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : -100,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -262,7 +306,7 @@
       "screenshot" : "topCenter--100-0-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 0,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     },
     {
       "capture" : "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
@@ -275,8 +319,12 @@
       },
       "clickThrough" : true,
       "display" : 1,
-      "heightPoints" : 900,
+      "displayID" : 10,
+      "displayName" : "Screen Sharing Virtual Display",
+      "displayVendor" : 1633775724,
+      "heightPoints" : 1080,
       "horizontalOffset" : 100000,
+      "isVirtual" : true,
       "originX" : 0,
       "originY" : 0,
       "panelLevel" : 25,
@@ -286,9 +334,11 @@
       "screenshot" : "bottomRight-100000-100000-display-1.png",
       "topSafeAreaInset" : 0,
       "verticalOffset" : 100000,
-      "widthPoints" : 1600
+      "widthPoints" : 1920
     }
   ],
-  "environment" : "Physical macOS displays; production NSPanel controller and SwiftUI overlay; isolated synthetic identity",
-  "revision" : "54eb0a362ec212b6b1f3a676e9ac352dd3e1343d"
+  "environment" : "macOS displays classified by the production RemoteViewMonitor; production NSPanel controller and SwiftUI overlay; isolated synthetic identity",
+  "physicalDisplayCount" : 0,
+  "revision" : "1aca0513aa4c8595d23e01e5fc228d344ca24fee",
+  "virtualDisplayCount" : 1
 }

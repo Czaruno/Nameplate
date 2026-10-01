@@ -8,9 +8,9 @@ Reproduction tools: [Scripts/evidence](https://github.com/Czaruno/Nameplate/tree
 
 ## macos
 
-Physical macOS display, 1600×900 points, 3200×1800 pixels, 2× scale. ScreenCaptureKit captures a live composite of the production NSPanel/SwiftUI overlay and a synthetic backdrop only.
+Screen Sharing virtual macOS display, 1920×1080 points, 3840×2160 pixels, 2× scale. Recorded display name/vendor and production virtual-display classification confirm that this is not physical hardware evidence. Earlier macOS screenshots were labeled physical without recording the display type; these classified captures supersede that unsupported label. ScreenCaptureKit captures a live composite of the production NSPanel/SwiftUI overlay and a synthetic backdrop only.
 
-Production revision: `54eb0a362ec212b6b1f3a676e9ac352dd3e1343d`. [Measurements](./macos/runtime.json).
+Production revision: `1aca0513aa4c8595d23e01e5fc228d344ca24fee`. [Measurements](./macos/runtime.json).
 
 - [topLeft-0-0-display-1.png](./macos/topLeft-0-0-display-1.png)
 - [topCenter-0-0-display-1.png](./macos/topCenter-0-0-display-1.png)
