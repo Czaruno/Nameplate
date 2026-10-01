@@ -26,7 +26,7 @@ with tempfile.TemporaryDirectory(prefix="nameplate-x11-") as temporary:
     read_fd, write_fd = os.pipe()
     processes = []
     try:
-        xvfb = subprocess.Popen(["Xvfb", "-displayfd", str(write_fd), "-screen", "0", "1280x800x24", "-nolisten", "tcp"], pass_fds=(write_fd,))
+        xvfb = subprocess.Popen(["Xvfb", "-displayfd", str(write_fd), "-screen", "0", "1280x800x24", "-nolisten", "tcp", "-noreset"], pass_fds=(write_fd,))
         processes.append(xvfb)
         os.close(write_fd)
         display = os.read(read_fd, 32).decode().strip()
@@ -35,10 +35,10 @@ with tempfile.TemporaryDirectory(prefix="nameplate-x11-") as temporary:
         (work / "runtime").mkdir(mode=0o700)
         config_dir = work / "config/nameplate"
         config_dir.mkdir(parents=True)
-        subprocess.run(["xsetroot", "-solid", "#0f141a"], env=env, check=True)
-        for command in (["openbox"], ["xcompmgr", "-a"]):
+        for command in (["openbox"], ["xcompmgr"]):
             processes.append(subprocess.Popen(command, env=env, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL))
         time.sleep(0.6)
+        subprocess.run(["xsetroot", "-solid", "#0f141a"], env=env, check=True)
         with (output / "daemon.log").open("w") as log:
             for index, (position, x, y) in enumerate(cases):
                 config = dict(name="Evidence machine", glyph="★", color="#1D9E75", useFleetFile=False,
@@ -49,9 +49,10 @@ with tempfile.TemporaryDirectory(prefix="nameplate-x11-") as temporary:
                 staged.replace(config_dir / "settings.json")
                 if index == 0:
                     processes.append(subprocess.Popen([str(binary)], env=env, stdout=log, stderr=log))
-                time.sleep(1)
+                time.sleep(5 if index == 0 else 1)
                 if processes[-1].poll() is not None:
                     raise RuntimeError("Production GTK daemon exited.")
+                subprocess.run(["xwininfo", "-root", "-tree"], env=env, check=True, stdout=(output / "windows.txt").open("w"))
                 file = f"{position}-{x}-{y}.png"
                 subprocess.run(["import", "-window", "root", str(output / file)], env=env, check=True)
                 image = Image.open(output / file).convert("RGB")
