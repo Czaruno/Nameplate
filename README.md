@@ -2,7 +2,7 @@
 
 Real native runtime captures with a synthetic “Evidence machine” identity. All eight anchors plus signed offsets and extreme-offset clamping passed checks against photographed tag pixels. Each runtime.json records the production source revision, dimensions, scale, offsets, and observed bounds.
 
-**Physical three-monitor placement passed on October 1, 2026.** Live reconnect/rearrangement, mixed-scale, and notch hardware checks have not been established. Virtual desktops do not establish those behaviors.
+**Physical three-monitor placement passed on October 1, 2026.** Live physical USB display-adapter disconnect/reconnect also passed (3 → 2 → 3). Manual monitor dragging, mixed-scale, and notch hardware checks have not been established. Virtual desktops do not establish those behaviors.
 
 Reproduction tools: [Scripts/evidence](https://github.com/Czaruno/Nameplate/tree/codex/edge-center-positions/Scripts/evidence). No screenshots are added to the feature PR diff.
 
@@ -121,3 +121,11 @@ The negative horizontal origins and differing display sizes exercise per-display
 ![Right center, physical display 1](./macos-physical/rightCenter-0-0-display-1.png)
 
 ![Right center at vertical −100, physical display 2](./macos-physical/rightCenter-0--100-display-2.png)
+
+## macOS live reconnect
+
+[Successful 3 → 2 → 3 physical display transition, measurements, screenshots, and reproduction harness](./macos-reconnect/README.md). Right-center tags at zero offsets remained centered; production panel counts and frames followed the real display changes.
+
+![After disconnect: two physical displays](./macos-reconnect/reconnect-phase-1-display-1.png)
+
+![After reconnect: restored third physical display](./macos-reconnect/reconnect-phase-2-display-3.png)
