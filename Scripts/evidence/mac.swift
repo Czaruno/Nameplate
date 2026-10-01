@@ -7,7 +7,16 @@ import ScreenCaptureKit
 @main
 @MainActor
 enum MacPlacementEvidence {
-    static func main() async throws {
+    static func main() async {
+        do {
+            try await run()
+        } catch {
+            fputs("Native evidence failed: \(error.localizedDescription)\n", stderr)
+            exit(1)
+        }
+    }
+
+    private static func run() async throws {
         let output = URL(fileURLWithPath: CommandLine.arguments[1], isDirectory: true)
         try FileManager.default.createDirectory(at: output, withIntermediateDirectories: true)
         guard CGPreflightScreenCaptureAccess() else {
@@ -15,6 +24,13 @@ enum MacPlacementEvidence {
         }
         let app = NSApplication.shared
         app.setActivationPolicy(.accessory)
+        let screens = NSScreen.screens
+        let physicalCount = screens.filter { !RemoteViewMonitor.isVirtual(screen: $0) }.count
+        let minimumPhysical = Int(ProcessInfo.processInfo.environment["NAMEPLATE_EVIDENCE_MIN_PHYSICAL_DISPLAYS"] ?? "0") ?? 0
+        guard physicalCount >= minimumPhysical else {
+            throw NSError(domain: "Evidence", code: 8, userInfo: [NSLocalizedDescriptionKey:
+                "Expected at least \(minimumPhysical) physical displays; this session exposes \(physicalCount) physical and \(screens.count - physicalCount) virtual displays."])
+        }
         UserDefaults.standard.setVolatileDomain([
             "customName": "Evidence machine", "colorHex": "#1D9E75", "glyph": "★",
             "useFleetFile": false, "frameEnabled": false, "watermarkEnabled": false,
@@ -30,7 +46,6 @@ enum MacPlacementEvidence {
         }.filter { !$0.isHidden }
         running.forEach { _ = $0.hide() }
         defer { running.forEach { _ = $0.unhide() } }
-        let screens = NSScreen.screens
         var backdrops: [NSWindow] = []
         var labels: [NSTextField] = []
         for (index, screen) in screens.enumerated() {
@@ -48,7 +63,7 @@ enum MacPlacementEvidence {
             window.orderFrontRegardless()
             backdrops.append(window)
             labels.append(label)
-            print("Display \(index + 1): \(screen.frame), scale \(screen.backingScaleFactor)×")
+            print("Display \(index + 1): \(screen.frame), scale \(screen.backingScaleFactor)×, virtual \(RemoteViewMonitor.isVirtual(screen: screen))")
         }
         defer { backdrops.forEach { $0.close() } }
         var cases = TagPosition.allCases.map { ($0, 0.0, 0.0) }
@@ -59,7 +74,8 @@ enum MacPlacementEvidence {
             settings.tagHorizontalOffset = x
             settings.tagVerticalOffset = y
             for (index, screen) in screens.enumerated() {
-                labels[index].stringValue = "Nameplate runtime evidence\nmacOS physical display \(index + 1) · \(screen.backingScaleFactor)×\n\(position.label) · offsets \(x), \(y)"
+                let kind = RemoteViewMonitor.isVirtual(screen: screen) ? "virtual" : "physical"
+                labels[index].stringValue = "Nameplate runtime evidence\nmacOS \(kind) display \(index + 1) · \(screen.backingScaleFactor)×\n\(position.label) · offsets \(x), \(y)"
             }
             controller.applyVisibility(animated: false)
             self.pump()
@@ -92,6 +108,8 @@ enum MacPlacementEvidence {
                     "position": position.rawValue, "horizontalOffset": x, "verticalOffset": y,
                     "display": index + 1, "widthPoints": screen.frame.width, "heightPoints": screen.frame.height,
                     "originX": screen.frame.minX, "originY": screen.frame.minY,
+                    "displayID": displayID, "displayName": screen.localizedName,
+                    "displayVendor": CGDisplayVendorNumber(displayID), "isVirtual": RemoteViewMonitor.isVirtual(screen: screen),
                     "scale": screen.backingScaleFactor, "topSafeAreaInset": screen.safeAreaInsets.top, "screenshot": file,
                     "productionPanelsVisible": panels.count, "clickThrough": true, "panelLevel": panels[0].level.rawValue,
                     "capture": "ScreenCaptureKit live display composite restricted to evidence backdrop and production panels",
@@ -102,7 +120,8 @@ enum MacPlacementEvidence {
         // Tear down before returning so the user's desktop is immediately restored.
         app.windows.compactMap { $0 as? NSPanel }.forEach { $0.close() }
         let data = try JSONSerialization.data(withJSONObject: [
-            "environment": "Physical macOS displays; production NSPanel controller and SwiftUI overlay; isolated synthetic identity",
+            "environment": "macOS displays classified by the production RemoteViewMonitor; production NSPanel controller and SwiftUI overlay; isolated synthetic identity",
+            "physicalDisplayCount": physicalCount, "virtualDisplayCount": screens.count - physicalCount,
             "revision": ProcessInfo.processInfo.environment["NAMEPLATE_EVIDENCE_SHA"] ?? "unknown",
             "cases": rows,
         ], options: [.prettyPrinted, .sortedKeys])

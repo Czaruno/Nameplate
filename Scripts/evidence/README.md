@@ -8,7 +8,12 @@ source revision. Pixel checks fail when the photographed pill is missing or misp
 - macOS: run `Scripts/evidence/mac.sh /absolute/output/directory` on a Mac with Screen
   Recording permission. It builds a temporary isolated app bundle linked to the
   production overlay controller and SwiftUI views, captures every connected physical
-  screen with ScreenCaptureKit, and restores the desktop afterward. The composite
+  screen with ScreenCaptureKit, and restores the desktop afterward. Display name,
+  vendor, and the production virtual-display classification are recorded; Screen
+  Sharing can expose virtual screens instead of the connected physical monitors.
+  Use `NAMEPLATE_EVIDENCE_MIN_PHYSICAL_DISPLAYS=2 Scripts/evidence/mac.sh /absolute/output`
+  for dual-monitor hardware evidence: it fails before capture if fewer than two
+  physical displays are visible to the session. The composite
   includes only the synthetic backdrop and production overlay panels. Settings use
   a separate bundle identifier. Re-run after connecting or rearranging monitors;
   report the actual screen origins and scales rather than claiming simulated displays.
