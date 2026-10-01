@@ -55,3 +55,16 @@ jobs:
       - name: Test core and GTK app
         working-directory: linux
         run: cargo test --workspace
+      - name: Install X11 evidence tools
+        run: sudo apt-get install -y xvfb openbox xcompmgr x11-xserver-utils x11-utils imagemagick dbus-x11 python3-pil fonts-dejavu-core
+      - name: Capture live Linux placement
+        env:
+          NAMEPLATE_EVIDENCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: dbus-run-session -- python3 Scripts/evidence/linux.py "${{ runner.temp }}/nameplate-linux-evidence"
+      - name: Upload Linux runtime evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: nameplate-linux-runtime
+          path: ${{ runner.temp }}/nameplate-linux-evidence
+          if-no-files-found: warn
