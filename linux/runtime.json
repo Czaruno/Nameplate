@@ -1,0 +1,198 @@
+{
+  "revision": "54eb0a362ec212b6b1f3a676e9ac352dd3e1343d",
+  "environment": "Production GTK daemon in an isolated Xvfb X11 desktop with Openbox and xcompmgr; one virtual 1280\u00d7800 monitor at 1\u00d7",
+  "cases": [
+    {
+      "position": "topLeft",
+      "horizontalOffset": 0,
+      "verticalOffset": 0,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "topLeft-0-0.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 14,
+        "top": 14,
+        "right": 189,
+        "bottom": 41
+      }
+    },
+    {
+      "position": "topCenter",
+      "horizontalOffset": 0,
+      "verticalOffset": 0,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "topCenter-0-0.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 552,
+        "top": 14,
+        "right": 727,
+        "bottom": 41
+      }
+    },
+    {
+      "position": "topRight",
+      "horizontalOffset": 0,
+      "verticalOffset": 0,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "topRight-0-0.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 1090,
+        "top": 14,
+        "right": 1265,
+        "bottom": 41
+      }
+    },
+    {
+      "position": "leftCenter",
+      "horizontalOffset": 0,
+      "verticalOffset": 0,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "leftCenter-0-0.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 14,
+        "top": 386,
+        "right": 189,
+        "bottom": 413
+      }
+    },
+    {
+      "position": "rightCenter",
+      "horizontalOffset": 0,
+      "verticalOffset": 0,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "rightCenter-0-0.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 1090,
+        "top": 386,
+        "right": 1265,
+        "bottom": 413
+      }
+    },
+    {
+      "position": "bottomLeft",
+      "horizontalOffset": 0,
+      "verticalOffset": 0,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "bottomLeft-0-0.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 14,
+        "top": 758,
+        "right": 189,
+        "bottom": 785
+      }
+    },
+    {
+      "position": "bottomCenter",
+      "horizontalOffset": 0,
+      "verticalOffset": 0,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "bottomCenter-0-0.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 552,
+        "top": 758,
+        "right": 727,
+        "bottom": 785
+      }
+    },
+    {
+      "position": "bottomRight",
+      "horizontalOffset": 0,
+      "verticalOffset": 0,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "bottomRight-0-0.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 1090,
+        "top": 758,
+        "right": 1265,
+        "bottom": 785
+      }
+    },
+    {
+      "position": "rightCenter",
+      "horizontalOffset": 0,
+      "verticalOffset": -100,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "rightCenter-0--100.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 1090,
+        "top": 286,
+        "right": 1265,
+        "bottom": 313
+      }
+    },
+    {
+      "position": "rightCenter",
+      "horizontalOffset": 0,
+      "verticalOffset": 100,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "rightCenter-0-100.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 1090,
+        "top": 486,
+        "right": 1265,
+        "bottom": 513
+      }
+    },
+    {
+      "position": "topCenter",
+      "horizontalOffset": -100,
+      "verticalOffset": 0,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "topCenter--100-0.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 452,
+        "top": 14,
+        "right": 627,
+        "bottom": 41
+      }
+    },
+    {
+      "position": "bottomRight",
+      "horizontalOffset": 100000,
+      "verticalOffset": 100000,
+      "displayWidth": 1280,
+      "displayHeight": 800,
+      "scale": 1,
+      "screenshot": "bottomRight-100000-100000.png",
+      "greenPixels": 3950,
+      "capturedPixelBounds": {
+        "left": 14,
+        "top": 14,
+        "right": 189,
+        "bottom": 41
+      }
+    }
+  ]
+}

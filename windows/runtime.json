@@ -1,0 +1,283 @@
+{
+  "revision": "1fa36ffb7ffd33621e68e61c20ed07af818402e3",
+  "environment": "Live WPF windows on a GitHub-hosted Windows VM; one virtual monitor, actual OS DPI",
+  "os": "Microsoft Windows NT 10.0.26100.0",
+  "cases": [
+    {
+      "position": "TopLeft",
+      "X": 0,
+      "Y": 0,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 20,
+        "Y": 20,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6391,
+      "capturedPixelBounds": {
+        "minX": 20,
+        "minY": 20,
+        "maxX": 207,
+        "maxY": 59
+      },
+      "screenshot": "TopLeft-0-0.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "TopRight",
+      "X": 0,
+      "Y": 0,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 816.03,
+        "Y": 20,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6343,
+      "capturedPixelBounds": {
+        "minX": 816,
+        "minY": 20,
+        "maxX": 1003,
+        "maxY": 59
+      },
+      "screenshot": "TopRight-0-0.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "BottomLeft",
+      "X": 0,
+      "Y": 0,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 20,
+        "Y": 708.06,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6229,
+      "capturedPixelBounds": {
+        "minX": 20,
+        "minY": 709,
+        "maxX": 207,
+        "maxY": 747
+      },
+      "screenshot": "BottomLeft-0-0.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "BottomRight",
+      "X": 0,
+      "Y": 0,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 816.03,
+        "Y": 708.06,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6181,
+      "capturedPixelBounds": {
+        "minX": 816,
+        "minY": 709,
+        "maxX": 1003,
+        "maxY": 747
+      },
+      "screenshot": "BottomRight-0-0.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "TopCenter",
+      "X": 0,
+      "Y": 0,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 418.015,
+        "Y": 20,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6392,
+      "capturedPixelBounds": {
+        "minX": 418,
+        "minY": 20,
+        "maxX": 605,
+        "maxY": 59
+      },
+      "screenshot": "TopCenter-0-0.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "LeftCenter",
+      "X": 0,
+      "Y": 0,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 20,
+        "Y": 364.03,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6391,
+      "capturedPixelBounds": {
+        "minX": 20,
+        "minY": 364,
+        "maxX": 207,
+        "maxY": 403
+      },
+      "screenshot": "LeftCenter-0-0.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "RightCenter",
+      "X": 0,
+      "Y": 0,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 816.03,
+        "Y": 364.03,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6343,
+      "capturedPixelBounds": {
+        "minX": 816,
+        "minY": 364,
+        "maxX": 1003,
+        "maxY": 403
+      },
+      "screenshot": "RightCenter-0-0.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "BottomCenter",
+      "X": 0,
+      "Y": 0,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 418.015,
+        "Y": 708.06,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6230,
+      "capturedPixelBounds": {
+        "minX": 418,
+        "minY": 709,
+        "maxX": 605,
+        "maxY": 747
+      },
+      "screenshot": "BottomCenter-0-0.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "RightCenter",
+      "X": 0,
+      "Y": -100,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 816.03,
+        "Y": 264.03,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6343,
+      "capturedPixelBounds": {
+        "minX": 816,
+        "minY": 264,
+        "maxX": 1003,
+        "maxY": 303
+      },
+      "screenshot": "RightCenter-0--100.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "RightCenter",
+      "X": 0,
+      "Y": 100,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 816.03,
+        "Y": 464.03,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6343,
+      "capturedPixelBounds": {
+        "minX": 816,
+        "minY": 464,
+        "maxX": 1003,
+        "maxY": 503
+      },
+      "screenshot": "RightCenter-0-100.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "TopCenter",
+      "X": -100,
+      "Y": 0,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 318.015,
+        "Y": 20,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6392,
+      "capturedPixelBounds": {
+        "minX": 318,
+        "minY": 20,
+        "maxX": 505,
+        "maxY": 59
+      },
+      "screenshot": "TopCenter--100-0.png",
+      "nativeHandlePresent": true
+    },
+    {
+      "position": "BottomRight",
+      "X": 100000,
+      "Y": 100000,
+      "displayScale": 1,
+      "displayWidth": 1024,
+      "displayHeight": 768,
+      "actualPillDips": {
+        "X": 20,
+        "Y": 20,
+        "Width": 187.97000000000003,
+        "Height": 39.94
+      },
+      "greenPixels": 6391,
+      "capturedPixelBounds": {
+        "minX": 20,
+        "minY": 20,
+        "maxX": 207,
+        "maxY": 59
+      },
+      "screenshot": "BottomRight-100000-100000.png",
+      "nativeHandlePresent": true
+    }
+  ]
+}
