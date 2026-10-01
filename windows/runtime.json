@@ -1,5 +1,5 @@
 {
-  "revision": "1fa36ffb7ffd33621e68e61c20ed07af818402e3",
+  "revision": "ea980c0e1e9e6b93e0c9b139beff47af59468608",
   "environment": "Live WPF windows on a GitHub-hosted Windows VM; one virtual monitor, actual OS DPI",
   "os": "Microsoft Windows NT 10.0.26100.0",
   "cases": [

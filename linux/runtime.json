@@ -1,5 +1,5 @@
 {
-  "revision": "54eb0a362ec212b6b1f3a676e9ac352dd3e1343d",
+  "revision": "ea980c0e1e9e6b93e0c9b139beff47af59468608",
   "environment": "Production GTK daemon in an isolated Xvfb X11 desktop with Openbox and xcompmgr; one virtual 1280\u00d7800 monitor at 1\u00d7",
   "cases": [
     {
@@ -10,7 +10,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "topLeft-0-0.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 14,
         "top": 14,
@@ -26,7 +26,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "topCenter-0-0.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 552,
         "top": 14,
@@ -42,7 +42,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "topRight-0-0.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 1090,
         "top": 14,
@@ -58,7 +58,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "leftCenter-0-0.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 14,
         "top": 386,
@@ -74,7 +74,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "rightCenter-0-0.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 1090,
         "top": 386,
@@ -90,7 +90,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "bottomLeft-0-0.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 14,
         "top": 758,
@@ -106,7 +106,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "bottomCenter-0-0.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 552,
         "top": 758,
@@ -122,7 +122,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "bottomRight-0-0.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 1090,
         "top": 758,
@@ -138,7 +138,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "rightCenter-0--100.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 1090,
         "top": 286,
@@ -154,7 +154,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "rightCenter-0-100.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 1090,
         "top": 486,
@@ -170,7 +170,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "topCenter--100-0.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 452,
         "top": 14,
@@ -186,7 +186,7 @@
       "displayHeight": 800,
       "scale": 1,
       "screenshot": "bottomRight-100000-100000.png",
-      "greenPixels": 3950,
+      "greenPixels": 3820,
       "capturedPixelBounds": {
         "left": 14,
         "top": 14,

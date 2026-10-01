@@ -29,9 +29,9 @@ Production revision: `54eb0a362ec212b6b1f3a676e9ac352dd3e1343d`. [Measurements](
 
 ## windows
 
-GitHub-hosted Windows VM, native production WPF TagWindow, one virtual 1024×768 display at 1×. Captures downloaded from upstream CI run 36806735323.
+GitHub-hosted Windows VM, native production WPF TagWindow, one virtual 1024×768 display at 1×. Captures downloaded from upstream CI run 36808124480. [CI artifact](https://github.com/steipete/Nameplate/actions/runs/36808124480/artifacts/11138278414).
 
-Production revision: `1fa36ffb7ffd33621e68e61c20ed07af818402e3`. [Measurements](./windows/runtime.json).
+Production revision: `ea980c0e1e9e6b93e0c9b139beff47af59468608`. [Measurements](./windows/runtime.json).
 
 - [TopLeft-0-0.png](./windows/TopLeft-0-0.png)
 - [TopRight-0-0.png](./windows/TopRight-0-0.png)
@@ -50,9 +50,9 @@ Production revision: `1fa36ffb7ffd33621e68e61c20ed07af818402e3`. [Measurements](
 
 ## linux
 
-Production GTK daemon running on Linux arm64 in a Debian Docker container, Xvfb/Openbox/xcompmgr X11 desktop, one virtual 1280×800 display at 1×. Captures use the compositor corrections committed in ea980c0.
+Production GTK daemon on a GitHub-hosted Ubuntu x64 runner, Xvfb/Openbox/xcompmgr X11 desktop, one virtual 1280×800 display at 1×. Captures downloaded from upstream CI run 36808124480. [CI artifact](https://github.com/steipete/Nameplate/actions/runs/36808124480/artifacts/11137739922).
 
-Production revision: `54eb0a362ec212b6b1f3a676e9ac352dd3e1343d`. [Measurements](./linux/runtime.json).
+Production revision: `ea980c0e1e9e6b93e0c9b139beff47af59468608`. [Measurements](./linux/runtime.json).
 
 - [topLeft-0-0.png](./linux/topLeft-0-0.png)
 - [topCenter-0-0.png](./linux/topCenter-0-0.png)
