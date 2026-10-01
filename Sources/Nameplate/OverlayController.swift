@@ -11,7 +11,6 @@ enum OverlayPanelFactory {
             styleMask: [.borderless, .nonactivatingPanel],
             backing: .buffered,
             defer: false)
-        panel.level = level
         panel.isOpaque = false
         panel.backgroundColor = .clear
         panel.hasShadow = false
@@ -20,6 +19,8 @@ enum OverlayPanelFactory {
         panel.isReleasedWhenClosed = false
         panel.isMovable = false
         panel.isFloatingPanel = true
+        // Becoming a floating panel resets its level; apply the requested level afterward.
+        panel.level = level
         panel.becomesKeyOnlyIfNeeded = true
         panel.animationBehavior = .none
         // Visible on every Space, next to fullscreen apps, and pinned during Mission Control.
