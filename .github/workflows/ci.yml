@@ -16,5 +16,31 @@ jobs:
         run: swift build
       - name: Test
         run: swift test
+      - name: Website placement parity
+        run: node Scripts/test_tag_placement.mjs
       - name: Package app (ad-hoc signed)
         run: APP_IDENTITY="-" ./Scripts/package_app.sh release
+
+  windows-build-and-test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1 # v5
+        with:
+          dotnet-version: '8.0.x'
+      - name: Test core
+        run: dotnet test windows/Nameplate.Core.Tests/Nameplate.Core.Tests.csproj
+      - name: Build app
+        run: dotnet build windows/Nameplate.App/Nameplate.App.csproj
+
+  linux-build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install GTK and X11 headers
+        run: sudo apt-get update && sudo apt-get install -y libgtk-4-dev libx11-dev libxi-dev
+      - name: Select Rust
+        run: rustup toolchain install stable --profile minimal && rustup default stable
+      - name: Test core and GTK app
+        working-directory: linux
+        run: cargo test --workspace

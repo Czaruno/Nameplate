@@ -102,6 +102,10 @@ final class OverlayController {
             if panel.frame != screen.frame {
                 panel.setFrame(screen.frame, display: true)
             }
+            if let hosting = panel.contentView as? NSHostingView<OverlayView>,
+               hosting.rootView.topSafeAreaInset != screen.safeAreaInsets.top {
+                hosting.rootView.topSafeAreaInset = screen.safeAreaInsets.top
+            }
             self.panels[index].screen = screen
         }
         self.applyVisibility(animated: false)
@@ -133,7 +137,8 @@ final class OverlayController {
             let panel = OverlayPanelFactory.makePanel(for: screen, level: .statusBar)
             panel.contentView = NSHostingView(rootView: OverlayView(
                 settings: self.settings,
-                infoLineProvider: self.infoLineProvider))
+                infoLineProvider: self.infoLineProvider,
+                topSafeAreaInset: screen.safeAreaInsets.top))
             panel.setFrame(screen.frame, display: true)
             return (panel, screen)
         }
