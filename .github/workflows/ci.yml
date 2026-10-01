@@ -32,6 +32,17 @@ jobs:
         run: dotnet test windows/Nameplate.Core.Tests/Nameplate.Core.Tests.csproj
       - name: Build app
         run: dotnet build windows/Nameplate.App/Nameplate.App.csproj
+      - name: Capture live Windows placement
+        env:
+          NAMEPLATE_EVIDENCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: dotnet run --project windows/Nameplate.Evidence/Nameplate.Evidence.csproj -- "${{ runner.temp }}/nameplate-windows-evidence"
+      - name: Upload Windows runtime evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: nameplate-windows-runtime
+          path: ${{ runner.temp }}/nameplate-windows-evidence
+          if-no-files-found: warn
 
   linux-build-and-test:
     runs-on: ubuntu-latest
