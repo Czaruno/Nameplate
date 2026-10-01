@@ -2,7 +2,7 @@
 
 Real native runtime captures with a synthetic “Evidence machine” identity. All eight anchors plus signed offsets and extreme-offset clamping passed checks against photographed tag pixels. Each runtime.json records the production source revision, dimensions, scale, offsets, and observed bounds.
 
-**Physical multi-monitor, display reconnect/rearrangement, mixed-scale, and notch hardware checks are still pending.** Virtual desktops do not establish those behaviors.
+**Physical three-monitor placement passed on October 1, 2026.** Live reconnect/rearrangement, mixed-scale, and notch hardware checks have not been established. Virtual desktops do not establish those behaviors.
 
 Reproduction tools: [Scripts/evidence](https://github.com/Czaruno/Nameplate/tree/codex/edge-center-positions/Scripts/evidence). No screenshots are added to the feature PR diff.
 
@@ -68,3 +68,56 @@ Production revision: `ea980c0e1e9e6b93e0c9b139beff47af59468608`. [Measurements](
 - [bottomRight-100000-100000.png](./linux/bottomRight-100000-100000.png)
 
 ![Right center — linux](./linux/rightCenter-0-0.png)
+
+## macOS physical three-monitor evidence
+
+Production revision: `1aca0513aa4c8595d23e01e5fc228d344ca24fee`. Native NSPanel/SwiftUI captures on the local console. All three displays are classified as physical; all are at 1× scale. Each passed all 12 cases, for 36 screenshots and photographed-pixel checks. [Measurements](./macos-physical/runtime.json).
+
+| Display | Dimensions in points/pixels | AppKit origin | Scale |
+| --- | --- | --- | --- |
+| DELL P2319H | 1920×1080 | (0, 0) | 1× |
+| HP x20LED (1) | 1600×900 | (−3200, 180) | 1× |
+| HP x20LED (2) | 1600×900 | (−1600, 180) | 1× |
+
+The negative horizontal origins and differing display sizes exercise per-display placement independently of the main screen. Physical mixed-scale and notch testing are not covered by this setup.
+
+- [topLeft-0-0-display-1.png](./macos-physical/topLeft-0-0-display-1.png)
+- [topLeft-0-0-display-2.png](./macos-physical/topLeft-0-0-display-2.png)
+- [topLeft-0-0-display-3.png](./macos-physical/topLeft-0-0-display-3.png)
+- [topCenter-0-0-display-1.png](./macos-physical/topCenter-0-0-display-1.png)
+- [topCenter-0-0-display-2.png](./macos-physical/topCenter-0-0-display-2.png)
+- [topCenter-0-0-display-3.png](./macos-physical/topCenter-0-0-display-3.png)
+- [topRight-0-0-display-1.png](./macos-physical/topRight-0-0-display-1.png)
+- [topRight-0-0-display-2.png](./macos-physical/topRight-0-0-display-2.png)
+- [topRight-0-0-display-3.png](./macos-physical/topRight-0-0-display-3.png)
+- [leftCenter-0-0-display-1.png](./macos-physical/leftCenter-0-0-display-1.png)
+- [leftCenter-0-0-display-2.png](./macos-physical/leftCenter-0-0-display-2.png)
+- [leftCenter-0-0-display-3.png](./macos-physical/leftCenter-0-0-display-3.png)
+- [rightCenter-0-0-display-1.png](./macos-physical/rightCenter-0-0-display-1.png)
+- [rightCenter-0-0-display-2.png](./macos-physical/rightCenter-0-0-display-2.png)
+- [rightCenter-0-0-display-3.png](./macos-physical/rightCenter-0-0-display-3.png)
+- [bottomLeft-0-0-display-1.png](./macos-physical/bottomLeft-0-0-display-1.png)
+- [bottomLeft-0-0-display-2.png](./macos-physical/bottomLeft-0-0-display-2.png)
+- [bottomLeft-0-0-display-3.png](./macos-physical/bottomLeft-0-0-display-3.png)
+- [bottomCenter-0-0-display-1.png](./macos-physical/bottomCenter-0-0-display-1.png)
+- [bottomCenter-0-0-display-2.png](./macos-physical/bottomCenter-0-0-display-2.png)
+- [bottomCenter-0-0-display-3.png](./macos-physical/bottomCenter-0-0-display-3.png)
+- [bottomRight-0-0-display-1.png](./macos-physical/bottomRight-0-0-display-1.png)
+- [bottomRight-0-0-display-2.png](./macos-physical/bottomRight-0-0-display-2.png)
+- [bottomRight-0-0-display-3.png](./macos-physical/bottomRight-0-0-display-3.png)
+- [rightCenter-0--100-display-1.png](./macos-physical/rightCenter-0--100-display-1.png)
+- [rightCenter-0--100-display-2.png](./macos-physical/rightCenter-0--100-display-2.png)
+- [rightCenter-0--100-display-3.png](./macos-physical/rightCenter-0--100-display-3.png)
+- [rightCenter-0-100-display-1.png](./macos-physical/rightCenter-0-100-display-1.png)
+- [rightCenter-0-100-display-2.png](./macos-physical/rightCenter-0-100-display-2.png)
+- [rightCenter-0-100-display-3.png](./macos-physical/rightCenter-0-100-display-3.png)
+- [topCenter--100-0-display-1.png](./macos-physical/topCenter--100-0-display-1.png)
+- [topCenter--100-0-display-2.png](./macos-physical/topCenter--100-0-display-2.png)
+- [topCenter--100-0-display-3.png](./macos-physical/topCenter--100-0-display-3.png)
+- [bottomRight-100000-100000-display-1.png](./macos-physical/bottomRight-100000-100000-display-1.png)
+- [bottomRight-100000-100000-display-2.png](./macos-physical/bottomRight-100000-100000-display-2.png)
+- [bottomRight-100000-100000-display-3.png](./macos-physical/bottomRight-100000-100000-display-3.png)
+
+![Right center, physical display 1](./macos-physical/rightCenter-0-0-display-1.png)
+
+![Right center at vertical −100, physical display 2](./macos-physical/rightCenter-0--100-display-2.png)
