@@ -34,7 +34,7 @@ jobs:
         run: dotnet build windows/Nameplate.App/Nameplate.App.csproj
       - name: Capture live Windows placement
         env:
-          NAMEPLATE_EVIDENCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          NAMEPLATE_EVIDENCE_SHA: ${{ github.sha }}
         run: dotnet run --project windows/Nameplate.Evidence/Nameplate.Evidence.csproj -- "${{ runner.temp }}/nameplate-windows-evidence"
       - name: Upload Windows runtime evidence
         if: always()
@@ -59,7 +59,7 @@ jobs:
         run: sudo apt-get install -y xvfb openbox xcompmgr x11-xserver-utils x11-utils imagemagick dbus-x11 python3-pil fonts-dejavu-core
       - name: Capture live Linux placement
         env:
-          NAMEPLATE_EVIDENCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          NAMEPLATE_EVIDENCE_SHA: ${{ github.sha }}
         run: dbus-run-session -- python3 Scripts/evidence/linux.py "${{ runner.temp }}/nameplate-linux-evidence"
       - name: Upload Linux runtime evidence
         if: always()
